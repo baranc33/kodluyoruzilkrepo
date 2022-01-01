@@ -18,11 +18,14 @@ FF  00-49
 
 */
 const SMILE=`:)  `;
+let info=document.querySelector('#info');
 
 let examGraade=prompt("puanı girin");
 let textInfo; 
 if(examGraade>0&&examGraade<100){
     textInfo=SMILE;
+    info.style.color='blue';
+
     if(examGraade>=90){
         textInfo +='AA';
         }
@@ -49,6 +52,7 @@ if(examGraade>0&&examGraade<100){
         }
         else {
             textInfo =':(  50';
+            info.style.color='red';
         }
         
 }
@@ -58,7 +62,6 @@ else{
 
 
 
-let info=document.querySelector('#info');
 
 info.innerHTML=`${textInfo} -> ${examGraade}`;
 console.log(textInfo);
