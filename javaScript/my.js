@@ -17,3 +17,36 @@ FF  00-49
 4-ff class bilgisi text-danger,diğerleri ise text-primary olsun
 
 */
+
+let examGraade=prompt("puanı girin");
+let textInfo; 
+if(examGraade>=90){
+textInfo='AA';
+}
+else if(examGraade>=85){
+    textInfo='BA';
+}
+else if(examGraade>=80){
+    textInfo='BB';
+}
+else if(examGraade>=75){
+    textInfo='CB';
+}
+else if(examGraade>=70){
+    textInfo='CC';
+}
+else if(examGraade>=65){
+    textInfo='DC';
+}
+else if(examGraade>=60){
+    textInfo='DD';
+}
+else if(examGraade>=50){
+    textInfo='FD';
+}
+else{
+    textInfo='50';
+}
+
+
+console.log(textInfo);
