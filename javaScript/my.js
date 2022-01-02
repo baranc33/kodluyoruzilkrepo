@@ -7,4 +7,10 @@ function helloWord(){
     console.log(' Word');
 }
 
+function writeName(name,lastname){
+
+    console.log(`Merhaba ${name} ${lastname}`)
+}
+
 helloWord();
+writeName('hakan', 'çakır');
