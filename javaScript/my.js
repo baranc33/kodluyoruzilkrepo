@@ -1,16 +1,9 @@
-
-function hello(){
-    console.log('Hello');
-}
-function helloWord(){
-    hello();
-    console.log(' Word');
+let firstName="Hakan";
+function Selamlama(name){
+return `Selam ${name} `;
 }
 
-function writeName(name,lastname){
 
-    console.log(`Merhaba ${name} ${lastname}`)
-}
+let Selam=Selamlama(firstName);
 
-helloWord();
-writeName('hakan', 'çakır');
+console.log(Selam);
