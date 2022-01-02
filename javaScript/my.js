@@ -1,11 +1,9 @@
-let firstName="Hakan";
-function Selamlama(name="insan"){
-return `Selam ${name} `;
+// istediğimiz html elemanı istediğimiz gibi yazacağımız bir fonksyon hazırlayalım
+
+
+function domIdWriteInfo(id,info){
+    let domObject=document.querySelector(`#${id}`);
+    domObject.innerHTML=info
 }
 
-
-let Selam=Selamlama(firstName);
-let Selam2=Selamlama();
-
-console.log(Selam);// selam hakan
-console.log(Selam2);//selam insan
+domIdWriteInfo('info','selam')
