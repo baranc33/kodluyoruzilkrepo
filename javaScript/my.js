@@ -9,7 +9,12 @@ let greeting=document.querySelector('#info');
 
 
 greeting.addEventListener("click",domClick);
+// function domClick(){
+//     console.log(this.innerHtml="Tıklandığında değişti");
+//     this.style.color='red';
+// }
+
+// ternar ile bi dğeişiklik yapalım
 function domClick(){
-    console.log(this.innerHtml="Tıklandığında değişti");
-    this.style.color='red';
+    this.style.color=='red'? this.style.color='blue':this.style.color='red';
 }
