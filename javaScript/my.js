@@ -1,24 +1,15 @@
-// önce normal function tanımlayalım ardından bunu 
-// arrow ile tanımlayalım
-function hello(firstName) {
-    console.log(`Merhaba ${firstName}`)
+// event listesi aşşağıdaki linkte
+//https://www.w3schools.com/jsref/dom_obj_event.asp
+
+let greeting=document.querySelector('#info');
+// greeting.addEventListener('click', function(){
+// // bu şekilde direk fonksyon yazılabilir yada aşşağıdaki gibi
+// // dışardan belirttiğimiz bir fonksyon yolliyabiliriz
+// });
+
+
+greeting.addEventListener("click",domClick);
+function domClick(){
+    console.log(this.innerHtml="Tıklandığında değişti");
+    this.style.color='red';
 }
-hello('javaScript')
-
-const helloFuncV1 = (firstName) => { console.log(`Merhaba ${firstName}`) }
-helloFuncV1('Hakan');
-const helloFuncV2 = firstName => { console.log(`Merhaba ${firstName}`) }
-helloFuncV2('Baran');
-
-const helloFuncV3 = (firstName, lastName) => { console.log(`Merhaba ${firstName} ${lastName}`) }
-helloFuncV3('Hakan', 'Çakır');
-
-
-// return işlemide
-const helloFuncV4 = (firstName, lastName) => {
-    return`Merhaba ${firstName} ${lastName}`;
-}
-
-let a= helloFuncV4('hakan baran','çakır');
-
-console.log(a);
