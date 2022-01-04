@@ -1,3 +1,5 @@
+// bi
+
 let counter=0;
 let counterDom=document.querySelector('#counter');
 let increaseDom=document.querySelector('#increase');
@@ -10,13 +12,6 @@ increaseDom.addEventListener('click',clickEvent);
 decreaseDom.addEventListener('click',clickEvent);
 
 function clickEvent() {
-    console.log();
-    if(this.id=='increase')// burdaki id butonun etiketi
-    {
-        counterDom.innerHTML= ++counter;
-    }
-    else if(this.id=='decrease')
-    {
-        counterDom.innerHTML=--counter;
-    }
+    this.id=='increase'?++counter:--counter;
+    counterDom.innerHTML=counter;
 }
