@@ -1,9 +1,22 @@
-// event listesi aşşağıdaki linkte
-//https://www.w3schools.com/jsref/dom_obj_event.asp
+let counter=0;
+let counterDom=document.querySelector('#counter');
+let increaseDom=document.querySelector('#increase');
+let decreaseDom=document.querySelector('#decrease');
 
-let greeting=document.querySelector('#info');
-greeting.addEventListener("mouseover",domClick);
 
-function domClick(){
-    this.style.color=='red'? this.style.color='blue':this.style.color='red';
+counterDom.innerHTML=counter;
+
+increaseDom.addEventListener('click',clickEvent);
+decreaseDom.addEventListener('click',clickEvent);
+
+function clickEvent() {
+    console.log();
+    if(this.id=='increase')// burdaki id butonun etiketi
+    {
+        counter++;
+    }
+    else if(this.id=='decrease')
+    {
+        counter--;
+    }
 }
