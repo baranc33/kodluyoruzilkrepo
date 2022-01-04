@@ -13,10 +13,10 @@ function clickEvent() {
     console.log();
     if(this.id=='increase')// burdaki id butonun etiketi
     {
-        counter++;
+        counterDom.innerHTML= ++counter;
     }
     else if(this.id=='decrease')
     {
-        counter--;
+        counterDom.innerHTML=--counter;
     }
 }
