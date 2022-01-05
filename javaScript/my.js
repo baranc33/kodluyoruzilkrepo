@@ -1,31 +1,9 @@
-function Question(hobby) {
-    switch (hobby) {
-      case "car":
-        return function (name) {
-          console.log(name + " do you have a car ?");
-        };
-        break;
+//id=text olan buton çağrıldı
+//dblclick=çift tıklama etkinliği nesneye atandı,fonksiyon ismi parametre olarak tanımlandı
+const button = document.querySelector("#text");
+button.addEventListener('dblclick',clickFonksiyonu);
   
-      case "book":
-        return function (name) {
-          console.log(name + " what is your favorite author?");
-        };
-        break;
-  
-      case "software":
-        return function (name, type) {
-          console.log(name + " are you interested in " + type + "?");
-        };
-        break;
-  
-      default:
-        return function (name) {
-          console.log(name + "  how are you ?");
-        };
-        break;
-    }
+//fonksiyonda id=text olan element çağrılarak innerHTML ile içeriği değiştirildi.
+function clickFonksiyonu(){
+  document.getElementById("text").innerHTML = "NEW FORM";
   }
-  
-  var softwareQuestion = Question("software");
-  softwareQuestion("Cemre","nodejs");
-  
