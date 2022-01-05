@@ -1,9 +1,10 @@
-//id=text olan buton çağrıldı
-//dblclick=çift tıklama etkinliği nesneye atandı,fonksiyon ismi parametre olarak tanımlandı
-const button = document.querySelector("#text");
-button.addEventListener('dblclick',clickFonksiyonu);
+//id=fname olan nesne çağrılarak keyboard değişkenine atandı
+const keyboard =document.querySelector('#fname');
+//keyboard isimli değişkene "cut" etkinliği atandı ve fonksiyon ismi parametre olarak atandı
+keyboard.addEventListener("cut",cuttingFunction);
+//cuttingFunction isimli fonksiyon ile form inputuna yazılan girdileri klavye ctrl+c ile kesildiğinde etkinlik çalışmaktadır
+function cuttingFunction(event){
+  console.log("etkinlik tipi: " , event.type)
+  } 
   
-//fonksiyonda id=text olan element çağrılarak innerHTML ile içeriği değiştirildi.
-function clickFonksiyonu(){
-  document.getElementById("text").innerHTML = "NEW FORM";
-  }
+//console ekranı : etkinlik tipi: cut
