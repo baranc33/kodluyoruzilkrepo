@@ -1,11 +1,10 @@
-//form submitten verileri local stroge e
-let formDom=document.querySelector('#userForm');
-formDom.addEventListener('submit',formSubmit);
+let userFormDom=document.querySelector('#userForm');
+userFormDom.addEventListener('submit',formHandler);
 
-function formSubmit(event){// burda eventle yukarda belirttiğimiz işlemi
-    // event.preventDefault();// submit işlemini iptal ettik
+function formHandler(event){
+    event.preventDefault();
     let scoreInputDom=document.querySelector('#score');
-// input içindeki value değerini alalım
+
    localStorage.setItem('score',scoreInputDom.value);
 }
 
