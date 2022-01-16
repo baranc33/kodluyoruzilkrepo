@@ -5,3 +5,23 @@ body {
     background-size: cover;
   }
   
+
+  *{
+      color: white;
+  }
+
+
+  .boxStyle{
+      background-color: black;
+      color: white;
+      width: 200px;
+      height: auto;
+      min-height: 100px;
+
+  }
+
+  .testP{
+
+
+
+  }
