@@ -1,5 +1,6 @@
 body {
-    background-image: url('img/image.jpeg');
+    /* background-image: url('img/image.jpeg'); */
+    background-color: wheat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -15,3 +16,11 @@ color: wheat;
       color: black;
   }
 
+
+  div{
+      margin:  300px 0  0 500px;
+  }
+
+  table{
+      border: 1px;
+  }
