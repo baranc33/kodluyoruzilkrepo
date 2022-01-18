@@ -5,23 +5,13 @@ body {
     background-size: cover;
   }
   
-
-  *{
-      color: white;
+  a{
+ text-decoration: none;
+color: wheat;
   }
 
-
-  .boxStyle{
-      background-color: black;
-      color: white;
-      width: 200px;
-      height: auto;
-      min-height: 100px;
-
+  p::selection{
+      background-color: white;
+      color: black;
   }
 
-  .testP{
-
-
-
-  }
