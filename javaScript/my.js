@@ -1,11 +1,14 @@
-let user={userName :"Hakan Baran Çakır", isActive :true};
 
+let counter= localStorage.getItem('counter');
+let counterDom=document.querySelector('#counter');
+let increaseDom=document.querySelector('#increase');
+let decreaseDom=document.querySelector('#decrease');
 
-//obje olarak kaydetmek yerine json tipine çevirip atmalıyız
-localStorage.setItem('userInfo',JSON.stringify(user));
-
-let info=localStorage.getItem('userInfo');
-// bu bilgiyi parshe etmemiz lazım yoksa string olarka geliyor
-info =JSON.parse(info);
-console.log(info.userName);
-console.log(info.isActive);
+counterDom.innerHTML=counter;
+increaseDom.addEventListener('click',clickEvent);
+decreaseDom.addEventListener('click',clickEvent);
+function clickEvent() {
+    this.id=='increase'?++counter:--counter;
+    localStorage.setItem('counter',counter);
+    counterDom.innerHTML=counter;
+}
