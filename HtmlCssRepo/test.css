@@ -11,16 +11,8 @@ body {
      border: 0px;
  }
 
- form{
+ div{
+     margin-left: 150px;
      margin-top: 200px;
  }
 
- .buton:hover{
-     background-color: black;
-     color: white;
- }
-
- .buton:focus{
-    background-color: gray;
-    color: black;
-}
