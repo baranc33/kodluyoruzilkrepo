@@ -7,4 +7,20 @@ body {
   }
   
 
- 
+ fieldset{
+     border: 0px;
+ }
+
+ form{
+     margin-top: 200px;
+ }
+
+ .buton:hover{
+     background-color: black;
+     color: white;
+ }
+
+ .buton:focus{
+    background-color: gray;
+    color: black;
+}
