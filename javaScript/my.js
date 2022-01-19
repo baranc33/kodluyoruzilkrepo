@@ -1,5 +1,5 @@
-
-let counter= localStorage.getItem('counter');
+// sayı varsa sayı sayı yoksa 0/ couterı number yapmalıyız
+let counter= localStorage.getItem('counter')? Number(localStorage.getItem('counter')): 0;
 let counterDom=document.querySelector('#counter');
 let increaseDom=document.querySelector('#increase');
 let decreaseDom=document.querySelector('#decrease');
