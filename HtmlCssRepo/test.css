@@ -6,21 +6,5 @@ body {
     background-size: cover;
   }
   
-  a{
- text-decoration: none;
-color: wheat;
-  }
 
-  p::selection{
-      background-color: white;
-      color: black;
-  }
-
-
-  div{
-      margin:  300px 0  0 500px;
-  }
-
-  table{
-      border: 1px;
-  }
+ 

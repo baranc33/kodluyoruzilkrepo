@@ -15,45 +15,26 @@
 </head>
 
 <body topmargin="15" leftmargin="10">
-    <div>
-
-        <table>
-            <caption>
-                Üyeler
-            </caption>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Ad</th>
-                    <th>Soy Ad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Hakan Baran</td>
-                    <td>Çakır</td>
-
-                </tr>
-                <tr>
-                    <td>2 </td>
-                    <td>Müjdat</td>
-                    <td>özkan</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td colspan="3">Açıklama</td>
-                </tr>
-            </tfoot>
-        </table>
+  <form action="post.php" method="post" autocomplete="on" enctype="multipart/form-data">
 
 
+    <input type="text" placeholder="Başlık">
+
+    <textarea style="display: block;" name="" id="" cols="30" rows="10" placeholder="Mesaj">
+
+    </textarea>
+
+    <label for="">Cinsiyet</label>
+    <select name="" id="" >
+            <option value="1">Adam</option>
+            <option value="2">Kadın</option>
+
+    </select>
 
 
+    <button type="submit"> Gönder</button>
+  </form>
 
-    </div>
 </body>
 
 </html>
