@@ -2,30 +2,29 @@
 let domain="hakanbarancakir.cf";
 let isActive=false;
 let items=[ 1, 2, 3,isActive,domain];
+//  Sona bilgi eklemek
+items.push(50);
+// başa ekleme
+items.unshift('baş');
 
-console.log(items);
+console.log(items)
 
-// eleman ekleme 1 . daha farklı şekillerdede ekleme yapabiliriz 
-// detayları ilerde görcez
-items[items.length]="deneme";
-console.log(items);
 
-let emptyArray=[]// boş liste
+// sondaki bilgiyi çıkarma
+items.pop()
+console.log(items)
 
-// array içersindeki eleman/og sayisini ögrenmek
-console.log(items.length);
+// bu bilgiyi yaklayada biliriz
+let sonitem=items.pop();
+console.log(sonitem)
 
-//ilk elemanın cağrılması
-console.log(items[0]);
-// ortadaki elemanı çağırma
-console.log("Ortadaki değer : ",Math.floor(items.length/2))
+// ilk eleman almak
+let firstItemi=items.shift();
+console.log(firstItemi, '// Kalan dizi =',items);
 
-// son elemanın  çağrılması
-console.log(items[items.length-1]);
 
-// degisken iindeki bilginin array olup olmadığını kontrol etmek
 
-console.log(typeof(items))// object olarak değer verir
-console.log(
-    Array.isArray(items)// true döner
-)
+
+
+
+
