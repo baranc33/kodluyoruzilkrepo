@@ -22,6 +22,11 @@ console.log(sonitem)
 let firstItemi=items.shift();
 console.log(firstItemi, '// Kalan dizi =',items);
 
+// dizideki elamnı değiştirmek direk değer atabiliriz işlemde yapabilirz
+items[0]=items[0]+2;
+
+console.log(items);
+
 
 
 
