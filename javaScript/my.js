@@ -17,6 +17,9 @@ console.log(items.length);
 
 //ilk elemanın cağrılması
 console.log(items[0]);
+// ortadaki elemanı çağırma
+console.log("Ortadaki değer : ",Math.floor(items.length/2))
+
 // son elemanın  çağrılması
 console.log(items[items.length-1]);
 
