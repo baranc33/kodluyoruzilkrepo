@@ -21,3 +21,8 @@ console.log(items[0]);
 console.log(items[items.length-1]);
 
 // degisken iindeki bilginin array olup olmadığını kontrol etmek
+
+console.log(typeof(items))// object olarak değer verir
+console.log(
+    Array.isArray(items)// true döner
+)
