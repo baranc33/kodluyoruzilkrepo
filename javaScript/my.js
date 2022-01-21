@@ -18,6 +18,13 @@ console.log(items);
 console.log(items[0][1])// şeklinde Hülya ulaşabilrz
 
 // Array icerisinde oge ayirmak -> splice(pos,item?)
+console.log('--------------')
+let newItems=items.splice(0,2);
+console.log(newItems)
+console.log(items)// newItems   nesnelerini burda göremeyiz
+
+
+
 // array içerisindeki ogenin index bilgisini bulmak -> indexOf('value')
 
 
