@@ -9,6 +9,13 @@ let items=[1,2,3,4,5]
 let femaleUser=['Ayse','Hülya','Merve']
 let maleUsers=['Ahmet','Hakan','Mehmet']
 
+items.unshift(femaleUser);// dizinin başına bir dizi ekleme
+console.log(items);
+items.push(maleUsers)// dizinin sonuna bir dizi ekleme
+console.log(items);
+// bu şekilde eklediğimiz ögeler  array içinde array olarak ekler
+// index sayısı 1 artar
+console.log(items[0][1])// şeklinde Hülya ulaşabilrz
 
 // Array icerisinde oge ayirmak -> splice(pos,item?)
 // array içerisindeki ogenin index bilgisini bulmak -> indexOf('value')
