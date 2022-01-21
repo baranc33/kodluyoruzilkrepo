@@ -1,10 +1,10 @@
 let userFormDom=document.querySelector('#userForm');
 userFormDom.addEventListener('submit',formHandler);
 const alertDom=document.querySelector('#alert');
-const Alert=`
-<div class="alert alert-warning">
-<strong>Hatalı giriş</strong>
-<button type="button" class="btn-close"></button> 
+const AlertFucntion=(title,message,className="warning")=>`
+<div class="alert alert-${className} alert-dismissible fade show" row="alert" >
+<strong >${title}</strong>${message}
+<button type="button" class="btn-close" data-bs-dismiss="alert"></button> 
 </div>
 `;
 
@@ -16,9 +16,12 @@ function formHandler(event){
  // gelen bilgileri kontrol edelim
     if(USER_Name.value && SCORE.value){
     addItem(USER_Name.value,SCORE.value);
+     USER_Name="";
+     SCORE="";
+     alertDom.innerHTML="";
     }
     else{
-        alertDom.innerHTML=Alert;
+        alertDom.innerHTML=AlertFucntion("Başlık : ",'Eksik Bilgi girdiniz',"danger");
     }
 }
 
