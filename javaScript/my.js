@@ -1,11 +1,25 @@
 let userFormDom=document.querySelector('#userForm');
 userFormDom.addEventListener('submit',formHandler);
+const alertDom=document.querySelector('#alert');
+const Alert=`
+<div class="alert alert-warning">
+<strong>Hatalı giriş</strong>
+<button type="button" class="btn-close"></button> 
+</div>
+`;
+
 
 function formHandler(event){
     event.preventDefault();
     const USER_Name=document.querySelector('#username');// bilgi alacağımız input
     const SCORE=document.querySelector('#score');//bilgi alacağımız input2
+ // gelen bilgileri kontrol edelim
+    if(USER_Name.value && SCORE.value){
     addItem(USER_Name.value,SCORE.value);
+    }
+    else{
+        alertDom.innerHTML=Alert;
+    }
 }
 
 /*
@@ -22,6 +36,6 @@ const  addItem =(username,score) =>{
 <span class="badge bg-primary rounded-pill"> ${score}</span>`;// ekliceğimiz bilgi
     // li nin classlarını ekliyelim
     liDom.classList.add('list-group-item','d-flex' ,'justify-content-between', 'align-items-center')
-    userListDom.append(liDom);// ekleme işlemi
+    userListDom.append(liDom);//ul ye ekleme işlemi
 }
 
