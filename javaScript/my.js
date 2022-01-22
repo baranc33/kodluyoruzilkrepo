@@ -42,7 +42,13 @@ console.log('Copyalanan değer')
 
 console.log(copyItems);
 
+// 2. kopyalama yöntemi
 
+let newCopy=[...items]
+items.pop();
+console.log('Yeni nesil kopyalama')
+console.log(newCopy)
+console.log(items)
 
 
 
