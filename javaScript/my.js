@@ -33,8 +33,15 @@ console.log(number)// index
 // array içersindeki arrayleri bulmuyor
 
 
-
 // array kopyalamak -> slice,[...ES6]
+
+let copyItems=items.slice() // kopyalama işlemi yaptık
+items.pop();
+console.log(items)
+console.log('Copyalanan değer')
+
+console.log(copyItems);
+
 
 
 
