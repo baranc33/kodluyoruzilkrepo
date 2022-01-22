@@ -63,3 +63,8 @@ console.log(items.toString())
 console.log('join')
 console.log(items.join(' - '))// çıktı 2 - 3 - 4
 // istediğimiz index bilgisine öge eklemek --> splice (index,0,value)
+
+console.log('splice eklme')
+console.log(allUser)//['Ayse', 'Hülya', 'Merve', 'Ahmet', 'Hakan', 'Mehmet']
+allUser.splice(1,0,"baran")// 1. indexe  0dan başla baranı ekle
+console.log(allUser)// ['Ayse', 'baran', 'Hülya', 'Merve', 'Ahmet', 'Hakan', 'Mehmet']
