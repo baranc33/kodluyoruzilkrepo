@@ -28,7 +28,16 @@ console.log(items)// newItems   nesnelerini burda göremeyiz
 // array içerisindeki ogenin index bilgisini bulmak -> indexOf('value')
 
 
+let number=items.indexOf(4)// bulamazsa -1 döner
+console.log(number)// index 
+// array içersindeki arrayleri bulmuyor
+
+
+
 // array kopyalamak -> slice,[...ES6]
+
+
+
 
 // array içersindeki bilgiyi stringe çevirmek  -> toString, join
 
