@@ -50,11 +50,16 @@ console.log('Yeni nesil kopyalama')
 console.log(newCopy)
 console.log(items)
 
+// iki array ilgisini birleştirmek -> [...ES6 ,  ...ES6]
+// yeni yöntemle birleştirme 
+
+let allUser=[...femaleUser,...maleUsers]
+console.log(allUser)// direk 2 arrayi tek array gibi yapar
 
 
 // array içersindeki bilgiyi stringe çevirmek  -> toString, join
-
-// iki array ilgisini birleştirmek -> [...ES6 ,  ...ES6]
-
-
+console.log('To string')
+console.log(items.toString())
+console.log('join')
+console.log(items.join(' - '))// çıktı 2 - 3 - 4
 // istediğimiz index bilgisine öge eklemek --> splice (index,0,value)
