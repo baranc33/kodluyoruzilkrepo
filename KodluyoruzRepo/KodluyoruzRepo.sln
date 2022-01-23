@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Degiskenler", "Degiskenler\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictonary", "Dictonary\Dictonary.csproj", "{2D94981A-C6CD-420E-BEED-8539245826BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErişimBelirleyici", "ErişimBelirleyici\ErişimBelirleyici.csproj", "{1C71F5E4-D008-4CB2-816E-C2D3264586D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2D94981A-C6CD-420E-BEED-8539245826BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D94981A-C6CD-420E-BEED-8539245826BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D94981A-C6CD-420E-BEED-8539245826BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C71F5E4-D008-4CB2-816E-C2D3264586D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C71F5E4-D008-4CB2-816E-C2D3264586D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C71F5E4-D008-4CB2-816E-C2D3264586D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C71F5E4-D008-4CB2-816E-C2D3264586D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
