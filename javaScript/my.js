@@ -18,3 +18,6 @@ const USERS=[
 {fullname:"Asya Basar",isActive:true},
 {fullname:"Aksel Durmaz",isActive:true}
 ]
+const AKTIVE_USER=USERS.filter(user =>user.isActive==true)
+
+console.log(AKTIVE_USER)
