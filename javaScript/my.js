@@ -1,70 +1,12 @@
-// çok kullanilan Array(dizi) metotları ve array icinde array
+// for döngüsü
+// https://developer.mozilla.org/tr/docs/Web/JavaScript/Guide/Loops_and_iteration
 
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-//https://www.w3schools.com/js/js_array_methods.asp
-
-let items=[1,2,3,4,5]
-
-//array içinde array
-let femaleUser=['Ayse','Hülya','Merve']
-let maleUsers=['Ahmet','Hakan','Mehmet']
-
-items.unshift(femaleUser);// dizinin başına bir dizi ekleme
-console.log(items);
-items.push(maleUsers)// dizinin sonuna bir dizi ekleme
-console.log(items);
-// bu şekilde eklediğimiz ögeler  array içinde array olarak ekler
-// index sayısı 1 artar
-console.log(items[0][1])// şeklinde Hülya ulaşabilrz
-
-// Array icerisinde oge ayirmak -> splice(pos,item?)
-console.log('--------------')
-let newItems=items.splice(0,2);
-console.log(newItems)
-console.log(items)// newItems   nesnelerini burda göremeyiz
+let user =['hakan','baran','çakır']
 
 
 
-// array içerisindeki ogenin index bilgisini bulmak -> indexOf('value')
+for(let index=0; index<user.length; index++)
+{
 
-
-let number=items.indexOf(4)// bulamazsa -1 döner
-console.log(number)// index 
-// array içersindeki arrayleri bulmuyor
-
-
-// array kopyalamak -> slice,[...ES6]
-
-let copyItems=items.slice() // kopyalama işlemi yaptık
-items.pop();
-console.log(items)
-console.log('Copyalanan değer')
-
-console.log(copyItems);
-
-// 2. kopyalama yöntemi
-
-let newCopy=[...items]
-items.pop();
-console.log('Yeni nesil kopyalama')
-console.log(newCopy)
-console.log(items)
-
-// iki array ilgisini birleştirmek -> [...ES6 ,  ...ES6]
-// yeni yöntemle birleştirme 
-
-let allUser=[...femaleUser,...maleUsers]
-console.log(allUser)// direk 2 arrayi tek array gibi yapar
-
-
-// array içersindeki bilgiyi stringe çevirmek  -> toString, join
-console.log('To string')
-console.log(items.toString())
-console.log('join')
-console.log(items.join(' - '))// çıktı 2 - 3 - 4
-// istediğimiz index bilgisine öge eklemek --> splice (index,0,value)
-
-console.log('splice eklme')
-console.log(allUser)//['Ayse', 'Hülya', 'Merve', 'Ahmet', 'Hakan', 'Mehmet']
-allUser.splice(1,0,"baran")// 1. indexe  0dan başla baranı ekle
-console.log(allUser)// ['Ayse', 'baran', 'Hülya', 'Merve', 'Ahmet', 'Hakan', 'Mehmet']
+    console.log(user[index]);
+}
