@@ -1,14 +1,11 @@
-// for döngüsü
-// https://developer.mozilla.org/tr/docs/Web/JavaScript/Guide/Loops_and_iteration
+const LOREM_LIST=["hakan","baran","çakır","test"]
 
-let user =['hakan','baran','çakır']
+let counter=0;
 
-let userlistDom=document.querySelector('#userList')
+for(counter;counter<5;counter++){
 
-for(let index=0; index<user.length; index++)
-{
-    const liDom=document.createElement('li')
-    liDom.innerHTML=user[index];
-    userlistDom.appendChild(liDom);
-
+    if(LOREM_LIST[counter]=='test'){
+        break;
+    }
+    console.log(LOREM_LIST[counter])
 }
