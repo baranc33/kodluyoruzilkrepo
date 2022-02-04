@@ -1,8 +1,7 @@
-// While
+// foreach
 
-let counter=0;
 
-while(counter<10)
-{
-    console.log(counter++);
-}
+const PRODUCT=['Leptop','phone','speaker','desktop pc']
+
+
+PRODUCT.forEach(product=> console.log(product))
