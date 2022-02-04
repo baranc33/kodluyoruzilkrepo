@@ -4,8 +4,9 @@
 const PRODUCT=['Leptop','phone','speaker','desktop pc']
 
 
-PRODUCT.forEach((product,index)=> 
+
+PRODUCT.forEach((product,index,array)=> 
 {
-    console.log(index,'=>',product)
+    console.log(array[index]=product +" Yeni ")
 }
 )
