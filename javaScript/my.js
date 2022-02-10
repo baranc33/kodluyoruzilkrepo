@@ -13,5 +13,12 @@ const USERS=["AYSE","MehMet","TugCE",'AySEL']
 
 const NEW_USERS=USERS.map(user=>user.toLocaleLowerCase())
 
-console.log(USERS)
 console.log(NEW_USERS)
+// nesnemizin formatını değiştirelim
+const USERS_OBJ=USERS.map(item=>
+    {// ilk harfler büyük diğerleri küçük
+        return {userName:item,shortName:`${item[0]}.`,newName:`${item[0].toUpperCase()}${item.slice(1).toLocaleLowerCase()}`}
+    }
+    )
+
+    console.log(USERS_OBJ)
