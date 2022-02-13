@@ -1,2 +1,1 @@
-# PatikaOdevler
-patika.dev akademenin ödevleri.
+Kodluyoruz Eğitimi kapsamında açtığım ilk repo
