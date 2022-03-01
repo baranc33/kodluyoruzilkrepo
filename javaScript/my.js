@@ -1,19 +1,15 @@
 // karşılattırma operatörleri
-// == değer karşılaştırır
-//==== tür ve değer karşılaştırır.
-// negatif şekilleri  !=  !==
-let price=100;
-let user ="hakan";
+// kullanıcı Ehliyet alabilirmi
+let userName =prompt('kullanıcı adını giriniz');
+let age=prompt("Yaşınızı girniz");
 
-if(user=="hakan"){
-    console.log('user');
-}
 
-let name =prompt('kullanıcı adını giriniz');
-if(name.length>=1){
- console.log(`Kullanıcı Adınız ${name} `);
+if(userName && age>17){
+    console.log('Kullanıcı ehliyet alabilir');
 }
-else
-{
-    console.log(`Kullanıcı Adınız girmediniz`);
+else if(age<18){
+console.log('Kullanıcı ehliyet alamaz');
+}
+else{
+    console.log('Kullanıcı bilgilerinizi eksiksiz giriniz');  
 }
