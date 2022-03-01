@@ -2,11 +2,10 @@
 // == değer karşılaştırır
 //==== tür ve değer karşılaştırır.
 // negatif şekilleri  !=  !==
-let price="100";
+let price=100;
+let user ="hakan";
 
-
-console.log(price==100);// true
-console.log(price === 100);//false
-
+console.log(price && user=="hakan" );// true döner
+// 0 dan büyük olsun anlamına gelir
 
 
