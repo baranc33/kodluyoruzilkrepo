@@ -10,21 +10,26 @@
 
 </head>
 
-<h1 id="titles">Başlık</h1>
-<h2 id="title"> Merhaba Dünya </h2>
+<h2 id="info" style="text-align: center;"> Merhaba Dünya </h2>
 
 
 <script>
+// karşılattırma operatörleri
+// kullanıcı Ehliyet alabilirmi
+let userName =prompt('kullanıcı adını giriniz');
+let age=prompt("Yaşınızı girniz");
 
-// öncesinde böyle bi kod yazınca ekleme işleminde hata veriyor dikkat edelim
-// let last=document.querySelector('#list>li:last-child');//son elemanı yakaladık
-// console.log(item.last);
-
-
-let h1=document.querySelector('#titles');// ul id si list olan
-
-h1.classList.add('cssEkle','a','b');// toplu ekleme
-h1.classList.remove('a','b');//silme
+let info=document.querySelector('#info');
+info.innerHTML="asdf";
+if(userName && age>17){
+    info.innerHTML= 'Kullanıcı ehliyet alabilir';
+}
+else if(age<18){
+    info.innerHTML= 'Kullanıcı ehliyet alamaz';
+}
+else{
+    info.innerHTML= 'Kullanıcı bilgilerinizi eksiksiz giriniz';  
+}
 
 </script>
 
