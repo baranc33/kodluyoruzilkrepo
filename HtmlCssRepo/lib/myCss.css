@@ -1,12 +1,53 @@
 @import url("test.css");
 
-body{
-background-image: url('img/pp.png');
-background-repeat: no-repeat;/*tekrarı kaldırıyoruz*/
-/* background-position: top; ortada */
-/* background-position: left; sağa yasla */
-/* background-position: left top;  sağ üste diğerleri tahmin edilebilir*/
-/* background-position: 25px 10px;yatay,dikey */
-/* background-position: 25px top; bu şekildede olur */
-/* background-position: 60% -10% ; */
+html,body{
+    margin: 0;
+}
+.container{
+    width: 1500px;
+    /* height: 1500px; */
+    background-color: gray;
+
+}
+ 
+
+
+.container :nth-child(1){
+    background-color: aquamarine;
+    position: fixed;
+    z-index: 2;
+
+
+    width: 25%;
+    height: 100px;
+}
+
+
+
+.container :nth-child(2){
+    background-color: red;   
+    position: absolute;
+    margin-left: 25%;
+    /* top: 50px;  */
+
+
+    z-index: 1;
+    width: 75%;
+    height: 1500px;
+}
+
+
+
+
+.container :nth-child(3){
+    background-color: aquamarine;
+    position: fixed;
+    z-index: 3;
+    
+
+
+
+    bottom: 0%;
+    width: 90%;
+    height: 30px;
 }
