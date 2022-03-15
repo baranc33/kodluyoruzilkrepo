@@ -1,1 +1,12 @@
 @import url("test.css");
+
+body{
+background-image: url('img/pp.png');
+background-repeat: no-repeat;/*tekrarı kaldırıyoruz*/
+/* background-position: top; ortada */
+/* background-position: left; sağa yasla */
+/* background-position: left top;  sağ üste diğerleri tahmin edilebilir*/
+/* background-position: 25px 10px;yatay,dikey */
+/* background-position: 25px top; bu şekildede olur */
+/* background-position: 60% -10% ; */
+}
