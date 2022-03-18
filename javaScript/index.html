@@ -23,8 +23,16 @@
 
 <script>
 
-let item=document.querySelector('ul#list>li:last-child');
-console.log(item);
+// öncesinde böyle bi kod yazınca ekleme işleminde hata veriyor dikkat edelim
+// let last=document.querySelector('#list>li:last-child');//son elemanı yakaladık
+// console.log(item.last);
+
+
+let ul=document.querySelector('ul#list');// ul id si list olan
+let lidom=document.createElement('li');
+lidom.innerHTML='Yeni öğe';
+ul.append(lidom);//ögemizi ekleme işlemini yapmamamızı sağlar 
+
 </script>
 
 <body>
