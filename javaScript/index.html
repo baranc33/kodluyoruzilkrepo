@@ -9,12 +9,20 @@
 
 </head>
 
+<h1 id="baslik">Başlık</h1>
+<h2 id="title"> Merhaba Dünya </h2>
 
 
-selam
+
+
 <script>
-document.body.style.backgroundColor="aqua";
- 
+   let h1= document.getElementsByTagName('h1');// sağlıklı değil
+    console.log(h1.baslik.innerHTML);// id si ile alabiliriz
+    let h2=document.getElementById('title');
+    console.log(h2.innerHTML);// html içeriği
+
+
+
 </script>
 
 <body>
