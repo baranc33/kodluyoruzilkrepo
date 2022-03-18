@@ -14,20 +14,17 @@
 <h2 id="title"> Merhaba Dünya </h2>
 
 
-<ul>
-    <li>
-        <a href="" id="link"> Link
-        </a>
-    </li>
+<ul id="list">
+    <li>Bir</li>
+    <li>iki</li>
+    <li>üç</li>
 </ul>
 
 
 <script>
-let fullName=prompt("Lütfen adınızı giriniz");
-console.log(fullName);
- let h1=document.querySelector('#title');
-h1.innerHTML=`${fullName} <small style="color:red"> Hoş Geldin </small> `;
 
+let item=document.querySelector('ul#list>li:last-child');
+console.log(item);
 </script>
 
 <body>
