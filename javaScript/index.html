@@ -31,8 +31,9 @@
 let ul=document.querySelector('ul#list');// ul id si list olan
 let lidom=document.createElement('li');
 lidom.innerHTML='Yeni öğe';
-ul.append(lidom);//ögemizi ekleme işlemini yapmamamızı sağlar 
-
+// ul.append(lidom);//ögemizi ekleme işlemini yapmamamızı sağlar 
+// listenin sonuna değil istediğimiz yere ekleme
+ul.prepend(lidom);//  başa gelir
 </script>
 
 <body>
