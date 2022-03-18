@@ -14,13 +14,6 @@
 <h2 id="title"> Merhaba Dünya </h2>
 
 
-<ul id="list">
-    <li>Bir</li>
-    <li>iki</li>
-    <li>üç</li>
-</ul>
-
-
 <script>
 
 // öncesinde böyle bi kod yazınca ekleme işleminde hata veriyor dikkat edelim
@@ -28,12 +21,11 @@
 // console.log(item.last);
 
 
-let ul=document.querySelector('ul#list');// ul id si list olan
-let lidom=document.createElement('li');
-lidom.innerHTML='Yeni öğe';
-// ul.append(lidom);//ögemizi ekleme işlemini yapmamamızı sağlar 
-// listenin sonuna değil istediğimiz yere ekleme
-ul.prepend(lidom);//  başa gelir
+let h1=document.querySelector('#titles');// ul id si list olan
+
+h1.classList.add('cssEkle','a','b');// toplu ekleme
+h1.classList.remove('a','b');//silme
+
 </script>
 
 <body>
