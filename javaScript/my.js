@@ -16,5 +16,4 @@ if(name.length>=1){
 else
 {
     console.log(`Kullanıcı Adınız girmediniz`);
-
 }
