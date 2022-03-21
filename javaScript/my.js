@@ -1,15 +1,24 @@
-let items;
-try {
-    // bu kod hata items olmadığından hata vercek
-    // try içinde kullanmıyorsak aşşağıdaki
-    // geçiş yazısınıda göremeyiz
-    items.forEach(items => {
-        
-    });
-    
-} catch (error) {
-    console.log(error)
-}
+// fetch api ile calismak
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
-
-console.log('geçiş')
+// JSON dosyadan veri cekmek:
+// aşşağıdaki veri adresini belirtiyoruz
+fetch("04-javascript-kategorisi/data/settings.json").then(
+    response => response.json()
+  ).then(responseJson => {
+    console.log(responseJson)
+    console.log(responseJson.userName)
+  })
+  
+  let userListDOM = document.querySelector("#userList")
+  
+  // API uzerinden veri cektik
+  fetch("https://jsonplaceholder.typicode.com/posts").then(
+    response => response.json()
+  ).then(responseJson => {
+    responseJson.forEach(item => {
+      let liDOM = document.createElement('li')
+      liDOM.innerHTML = item.title
+      userListDOM.appendChild(liDOM)
+    })
+  })
