@@ -19,6 +19,8 @@ console.log(leptop1)
 
 keys=Object.keys(leptop1)
 console.log(keys)// sadece keysleri verir
+// key yerine sadece valuelerde alınabilir
+values=Object.values(leptop1)
 
 
 // bu key bilgilerini foreachle  kullanabiliriz
@@ -27,3 +29,4 @@ keys.forEach(item => {
     console.log(item)
     console.log(leptop1[item])
 });
+
