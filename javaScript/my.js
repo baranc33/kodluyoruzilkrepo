@@ -1,30 +1,24 @@
-// array map kullanımı
-// foreache benzerdir tek farkı yeni bir liste
-// elde etmemizii sağlar
-const USERS=["AYSE","MehMet","TugCE",'AySEL']
+// object tanımlama şekilleri
+//obje yapılarıyla ilgili çeşitli bilgilere eirşmek için siteye göz atılmasın
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+let arrayObj=[1,2,3]
+let object1 ={obj:1}
+console.log("arrayObj ",typeof(arrayObj))
+console.log("object1 ",typeof(object1))
+// değeri almak içinde
+console.log(arrayObj) // standart kullanımla yapabilirz
+console.log(object1) // standart kullanımla yapabilirz
+
+let item1= new Object();
+let item2={}
 
 
+console.log("item1 ",typeof(item1))
+console.log("item2 ",typeof(item2))
 
+// objenin aktif kullanımı
+let item3={}
+let item4=new Object()
 
-// username içinde orjinal isim kalsın
-// shortname içinde ilk harf büyük .(A.)
-// newname içinde ilk harf büyük olsun
+// objelere key value şeklinde oluşturabiliriz
 
-
-const NEW_USERS=USERS.map(user=>user.toLocaleLowerCase())
-
-console.log(NEW_USERS)
-// // nesnemizin formatını değiştirelim
-// const USERS_OBJ=USERS.map(item=>
-//     {// ilk harfler büyük diğerleri küçük
-//         return {userName:item,shortName:`${item[0]}.`,newName:`${item[0].toUpperCase()}${item.slice(1).toLocaleLowerCase()}`}
-//     }
-//     )
-
-// yukardakinin daha temiz halini yazalım
-
-const USERS_OBJ=USER.map(item=>(
-   {userName:item,shortName:`${item[0]}.`,newName:`${item[0].toUpperCase()}${item.slice(1).toLocaleLowerCase()}`}
-))
-
-    console.log(USERS_OBJ)
