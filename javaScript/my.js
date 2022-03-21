@@ -1,35 +1,13 @@
-let setting={
-    userName:"loremIpsum",
-    password:"BadPassword",
-    isActive:false,
-    ip:"127.0.0.1",
-    serverName:"Kodluyoruz.org"
-}
-// // obje içersindeki nesneyi alabiliriz
-// // let userName=setting.userName
+// arraylerde destructuring kullanmak
 
-// let {userName,password,isActive,ip,serverName}=setting;
-// // yukardaki yöntemle hepsini birer değişken yaptık
+let score=[100,200,300,400]
 
-// console.log(userName);
-// console.log(password,isActive);
-// console.log(ip,serverName);
-
-// // istersek bunlarda değişken ismini değiştirebilirz
-// // ip yerine server ip yapalım
-
-// let {userName,password,isActive,ip:ServerIp,serverName}=setting;
-
-// console.log(ServerIp)
-// Bazı kısımlarını alalım geri kalan kısımlarını bir değişkene array olarak atalım
-// let {userName:userName2,password:password2,isActive:isActive2,...newSettings}=setting
-
-// console.log(userName2)
-// console.log(newSettings)
+let[score1,score2,...otherScore]=score
+console.log(score1)
+console.log(score2)
+console.log(otherScore)
 
 
-// objenin destructring ile kopyalama
-let {...setting2}=setting
-setting.userName="Değişti"
-console.log(setting)
-console.log(setting2)
+// direk kopyalama yöntemi
+let newScore=[...score]
+console.log(newScore)
